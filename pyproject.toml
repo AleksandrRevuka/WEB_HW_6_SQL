@@ -8,6 +8,7 @@ packages = [{include = "web_hw_6_sql"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+faker = "^19.2.0"
 
 [tool.poetry.group.dev.dependencies]
 ipython = "^8.14.0"
@@ -22,3 +23,6 @@ rich = "^13.4.2"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[mypy]
+dmypyExecutable = "/home/alex/python_projects/WEB_HW_6_SQL/.venv/bin/dmypy"
