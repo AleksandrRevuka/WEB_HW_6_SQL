@@ -33,7 +33,12 @@ def get_random_gread():
             return GREADS[i]
 
 
-def insert_data_to_db(students, groups, subjects, teachers, journal) -> None:
+def insert_data_to_db(students, 
+                      groups, 
+                      subjects, 
+                      teachers, 
+                      journal) -> None:
+    
     with sqlite3.connect("student_journal.db") as con:
         cur = con.cursor()
 
@@ -60,7 +65,11 @@ def insert_data_to_db(students, groups, subjects, teachers, journal) -> None:
         con.commit()
 
 
-def generate_fake_data(number_students, number_groups, number_subjects, number_teachers, number_greads):
+def generate_fake_data(number_students, 
+                       number_groups, 
+                       number_subjects, 
+                       number_teachers, 
+                       number_greads):
     fake_students = []
     fake_group = []
     fake_teacher = []
